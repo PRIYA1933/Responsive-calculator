@@ -25,9 +25,4 @@ The design features:
 - Hover effects with smooth scaling.  
 - Fully responsive for different screen sizes.
 
----
 
-## 🔹 Live Demo
-
-View the calculator in action:  
-[🔗 Live Demo Placeholder]
