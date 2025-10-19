@@ -1,0 +1,109 @@
+/* Center everything on the page with a gradient background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+/* Calculator container */
+.calculator {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    backdrop-filter: blur(12px); /* glass effect */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input box */
+#inputbox {
+    height: 80px;
+    font-size: 32px;
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: none;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Button rows */
+#body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+#body div {
+    display: flex;
+    gap: 12px;
+    flex: 1; /* all rows equal height */
+}
+
+/* All buttons */
+button {
+    flex: 1;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Number buttons */
+.num {
+    background-color: #4e54c8;
+    color: #fff;
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #f5af19;
+    color: #fff;
+}
+
+/* Equal button */
+#equal {
+    background-color: #34c759;
+    color: #fff;
+}
+
+/* AC and DEL buttons */
+#allclear, #delete {
+    background-color: #ff3b30;
+    color: #fff;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.07);
+    opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #inputbox {
+        height: 60px;
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+}
